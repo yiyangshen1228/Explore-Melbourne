@@ -1,0 +1,63 @@
+<html>
+    
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>ass3</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+</head>
+<body>
+    <div id="map" class="mapboxgl-map">
+        <div class="mapboxgl-canary" style="visibility: hidden;"></div>
+        <div class="mapboxgl-canvas-container mapboxgl-interactive mapboxgl-touch-drag-pan mapboxgl-touch-zoom-rotate">
+            <canvas class="mapboxgl-canvas" tabindex="0" aria-label="Map" role="region" width="1534" height="1578" style="width: 767px; height: 789px;"></canvas>
+        </div>
+        <div class="mapboxgl-control-container">
+            <div class="mapboxgl-ctrl-top-left"></div>
+            <div class="mapboxgl-ctrl-top-right"></div>
+            <div class="mapboxgl-ctrl-bottom-left">
+                <div class="mapboxgl-ctrl" style="display: block;">
+                    <a class="mapboxgl-ctrl-logo" target="_blank" rel="noopener nofollow" href="https://www.mapbox.com/" aria-label="Mapbox logo"></a>
+                </div>
+            </div>
+            <div id="filters">
+        </div>
+    </div>
+
+    <div id="mapformat">
+        <input id="light-v10" type="radio" name="rtoggle" value="light" checked="checked">
+        <label for="light-v10">day</label>
+        <input id="dark-v10" type="radio" name="rtoggle" value="dark">
+        <label for="dark-v10">night</label>
+        <input id="satellite-v9" type="radio" name="rtoggle" value="satellite">
+        <label for="satellite-v9">satellite</label>
+        <input id="navigation-day-v1" type="radio" name="rtoggle" value="navigation-day">
+        <label for="navigation-day-v1">navigation day</label>
+        <input id="navigation-night-v1" type="radio" name="rtoggle" value="navigation-night">
+        <label for="navigation-night-v1">navigation night</label>
+    </div>
+
+
+  
+    <nav id="buttons">
+        <label class="switch">
+            <input type="checkbox" id = "togBtn">
+            <span class="slider round"></span>
+        </label>
+    </nav> 
+      
+   
+    
+
+    <script src="index.js"></script>
+
+
+
+
+
+</body></html>

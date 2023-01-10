@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Point of Interest</title>
+
+
+<!--    <meta http-equiv="content-type" content="text/html; charset=UTF-8">-->
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css">
+</head>
+<body>
+
+
+
+
+
+
+
+
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">Point of Interest</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#discover" class="nav__link">Discover</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#place" class="nav__link">Places</a>
+                </li>
+            </ul>
+
+            <div class="nav__dark">
+                <!-- Theme change button -->
+                <span class="change-theme-name">Dark mode</span>
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+
+            <i class="ri-close-line nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-function-line"></i>
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home" id="home">
+        <img src="assets/img/home2.jpg" alt="" class="home__img">
+
+        <div class="home__container container grid">
+            <div class="home__data">
+                <span class="home__data-subtitle">Discover your place</span>
+                <h1 class="home__data-title">Explore The <br> Most <b> Interested <br> Places </b> in Melbourne </b></h1>
+                <a href="#" class="button">Explore</a>
+
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                    <i class="ri-facebook-box-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                    <i class="ri-twitter-fill"></i>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+        <div class="about__container container grid">
+            <div class="about__data">
+                <h2 class="section__title about__title">More Information <br> About The Most Famous Places</h2>
+                <p class="about__description">You can find the most famous places at the best
+                    prices with special discounts, you choose the place we will guide you all the way to wait, get your
+                    place now.
+                </p>
+                <a href="#" class="button">Reserve a place</a>
+            </div>
+
+            <div class="about__img">
+                <div class="about__img-overlay">
+                    <img src="assets/img/MelbStar.jpeg" alt="" class="about__img-one">
+                </div>
+
+                <div class="about__img-overlay">
+                    <img src="assets/img/BlockArcade.jpeg" alt="" class="about__img-two">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== DISCOVER ====================-->
+    <section class="discover section" id="discover">
+        <h2 class="section__title">Discover the most <br> attractive places</h2>
+
+        <div class="discover__container container swiper-container">
+            <div class="swiper-wrapper">
+                <!--==================== DISCOVER 1 ====================-->
+                <div class="discover__card swiper-slide">
+                    <img src="assets/img/SouthMelb.png" alt="" class="discover__img">
+                    <div class="discover__data">
+                        <h2 class="discover__title">Melbourne Town Hall</h2>
+                        <span class="discover__description">24 tours available</span>
+                    </div>
+                </div>
+
+                <!--==================== DISCOVER 2 ====================-->
+                <div class="discover__card swiper-slide">
+                    <img src="assets/img/lane.png" alt="" class="discover__img">
+                    <div class="discover__data">
+                        <h2 class="discover__title">Hardware Lane</h2>
+                        <span class="discover__description">15 tours available</span>
+                    </div>
+                </div>
+
+                <!--==================== DISCOVER 3 ====================-->
+                <div class="discover__card swiper-slide">
+                    <img src="assets/img/South_Melbourne_Townhall.jpeg" alt="" class="discover__img">
+                    <div class="discover__data">
+                        <h2 class="discover__title">P3</h2>
+                        <span class="discover__description">18 tours available</span>
+                    </div>
+                </div>
+
+                <!--==================== DISCOVER 4 ====================-->
+                <div class="discover__card swiper-slide">
+                    <img src="assets/img/Flinders_st_station_mlb.jpeg" alt="" class="discover__img">
+                    <div class="discover__data">
+                        <h2 class="discover__title">Flinders Street Station</h2>
+                        <span class="discover__description">32 tours available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--==================== VIDEO ====================-->
+    <section class="video section">
+        <h2 class="section__title">Video Tour</h2>
+
+        <div class="video__container container">
+            <p class="video__description">Find out more with our video of the most beautiful and
+                pleasant places for you and your family.
+            </p>
+
+            <div class="video__content">
+                <video id="video-file">
+                    <source src="assets/video/video.mp4" type="video/mp4">
+                </video>
+
+                <button class="button button--flex video__button" id="video-button">
+                    <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                </button>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!--==================== PLACES ====================-->
+    <section class="place section" id="place">
+        <h2 class="section__title">Choose Your Place</h2>
+        <div class="place__container container">
+            <div class="place__map">
+
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<div id = "hihi">
+    <center>
+        <iframe src="map.html" width="1400" height="1200" frameborder="100" scrolling="auto" class="frame-area"></iframe></iframe>
+    </center>
+</div>
+
+
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+    <br><br><br><br><br><br>
+    <div class="footer__container container grid">
+        <div class="footer__content grid">
+            <div class="footer__data">
+                <p class="footer__description"><b>You choose the destination</b>><br>
+                    <b>We offer you the experiences</b>
+                </p>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                        <i class="ri-facebook-box-fill"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__data">
+                <h3 class="footer__subtitle">About</h3>
+                <ul>
+                    <li class="footer__item">
+                        <a href="https://github.com/yueruc/GEOM90007_ASS3.git" class="footer__link">Source Code</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__data">
+                <h3 class="footer__subtitle"></h3>
+                <ul>
+                    <li class="footer__item">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__rights">
+            <p class="footer__copy"></p>
+            <div class="footer__terms">
+                <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                <a href="#" class="footer__terms-link">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line scrollup__icon"></i>
+</a>
+
+
+<script src="index.js"></script>
+<!--=============== SCROLL REVEAL===============-->
+<script src="assets/js/scrollreveal.min.js"></script>
+
+<!--=============== SWIPER JS ===============-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+<!--<script  type="text/javascript">-->
+
+<!--function australia(){-->
+<!--var table = document.createElement("table");-->
+<!--var row = document.createElement("tr");-->
+<!--var col1 = document.createElement("th");-->
+<!--var col2 = document.createElement("th");-->
+<!--var col3 = document.createElement("th");-->
+
+<!--var newDiv = document.createElement("DIV");-->
+
+<!--var vis2 = "https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/australia_pie_graph.v1.json";-->
+<!--vegaEmbed('#pie_graph_australia', vis2).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+<!--newDiv.id = "pie_graph_australia";-->
+<!--col2.innerHTML = "<table><tr><td><img src='./data/grape.png' height=40> <Strong class='highlight' style='margin-left:10px'>1,663,557 tonnes</strong></td></tr><tr><td><img src='./data/orange.png' height=40> <Strong class='highlight'style=' margin-left:10px'>378,233 tonnes</strong></td></tr><tr><td><img src='./data/banana.png' height=40> <Strong class='highlight' style='margin-left:10px'>373,931 tonnes</strong></td></tr></table>"-->
+
+<!--col1.appendChild(newDiv);-->
+<!--row.appendChild(col1);-->
+<!--row.appendChild(col2);-->
+<!--table.appendChild(row);-->
+
+<!--document.getElementById("hold").innerHTML="";-->
+<!--document.getElementById("hold").appendChild(table);-->
+<!--}-->
+
+<!--function china(){-->
+<!--var newDiv = document.createElement("DIV");-->
+<!--var table = document.createElement("table");-->
+<!--var row   = document.createElement("tr");-->
+<!--var col1  = document.createElement("th");-->
+<!--var col2  = document.createElement("th");-->
+
+
+<!--col2.innerHTML = "<table><tr><td><img src='./data/rice-bowl.png' height=40> <Strong class='highlight' style='margin-left:10px'>356,869,353 tonnes</strong></td></tr><tr><td><img src='./data/corn.png' height=40> <Strong class='highlight'style=' margin-left:10px'>257,348,659 tonnes</strong></td></tr><tr><td><img src='./data/broccoli.png' height=40> <Strong class='highlight' style='margin-left:10px'>174,861,648 tonnes</strong></td></tr></table>"-->
+<!--col2.setAttribute("style" ,"margin-left: 1px;");-->
+
+<!--var vis2 = "https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/china_pie_graph.v1.json";-->
+<!--vegaEmbed('#china_pie_graph', vis2).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+
+
+<!--newDiv.id = "china_pie_graph";-->
+<!--col1.appendChild(newDiv);-->
+<!--row.appendChild(col1);-->
+<!--row.appendChild(col2);-->
+<!--table.appendChild(row);-->
+
+<!--document.getElementById("hold").innerHTML="";-->
+<!--document.getElementById("hold").appendChild(table);-->
+<!--}-->
+
+<!--function india(){-->
+<!--var table = document.createElement("table");-->
+<!--var row   = document.createElement("tr");-->
+<!--var col1  = document.createElement("th");-->
+<!--var col2  = document.createElement("th");-->
+
+
+<!--var newDiv = document.createElement("DIV");-->
+
+
+<!--col2.innerHTML = "<table><tr><td><img src='./data/sugar-cane.png' height=40> <Strong class='highlight'>376,900,000 tonnes</strong></td></tr><tr><td><img src='./data/rice-bowl.png' height=40> <Strong class='highlight'>287,690,860 tonnes</strong></td></tr><tr><td><img src='./data/grain.png' height=40> <Strong class='highlight'>99,700,000 tonnes</strong></td></tr></table>"-->
+<!--col2.setAttribute("style" ,"margin-left: 1px;");-->
+
+
+<!--var vis2 = "https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/india_pie_graph.v1.json";-->
+<!--vegaEmbed('#india_pie_graph', vis2).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+
+<!--newDiv.id = "india_pie_graph";-->
+
+<!--col1.appendChild(newDiv);-->
+<!--row.appendChild(col1);-->
+<!--row.appendChild(col2);-->
+<!--table.appendChild(row);-->
+
+<!--document.getElementById("hold").innerHTML="";-->
+<!--document.getElementById("hold").appendChild(table);-->
+<!--}-->
+
+<!--function japan(){-->
+<!--var table = document.createElement("table");-->
+<!--var row   = document.createElement("tr");-->
+<!--var col1  = document.createElement("th");-->
+<!--var col2  = document.createElement("th");-->
+<!--col2.innerHTML = "<table><tr><td><img src='./data/rice-bowl.png' height=40> <Strong class='highlight' style='margin-left:10px'>16,215,743 tonnes</strong></td></tr><tr><td><img src='./data/sugar-beet.png' height=40> <Strong class='highlight'style=' margin-left:10px'>3,611,000 tonnes</strong></td></tr><tr><td><img src='./data/potato.png' height=40> <Strong class='highlight' style='margin-left:10px'>2,261,945 tonnes</strong></td></tr></table>"-->
+<!--var newDiv = document.createElement("DIV");-->
+<!--var vis2 = "https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/japan_pie_graph.v1.json";-->
+<!--vegaEmbed('#japan_pie_graph', vis2).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+
+<!--newDiv.id = "japan_pie_graph";-->
+<!--col1.appendChild(newDiv);-->
+<!--row.appendChild(col1);-->
+<!--row.appendChild(col2);-->
+<!--table.appendChild(row);-->
+
+<!--document.getElementById("hold").innerHTML="";-->
+<!--document.getElementById("hold").appendChild(table);-->
+<!--}-->
+
+<!--var vis1 = "https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/meat_by_region.v1.json";-->
+<!--vegaEmbed('#scatterplot_by_region', vis1).then(function(result) {}).catch(console.error);-->
+
+
+<!--var vis3 = "https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/australia_bar_graph.v1.json";-->
+<!--vegaEmbed('#bar_graph_australia', vis3).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+<!--var vis4 = "https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/meat_per_capita_map.v1.json";-->
+<!--vegaEmbed('#asia_meat_per_capita', vis4).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+<!--var vis11 = "https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/vege_per_capita_map.v1.json";-->
+<!--vegaEmbed('#asia_vege_per_capita', vis11).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+
+<!--var vis5 = "https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/vege_per_capita_map.v1.json";-->
+<!--vegaEmbed('#asia_vege_per_capita', vis5).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+<!--var vis6 = "https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/main_crop_in_asia.v1.json";-->
+<!--vegaEmbed('#main_crop', vis6).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+<!--var vis7= "https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/meat_production_asia.v1.json";-->
+<!--vegaEmbed('#meat_production', vis7).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+<!--var vis8="https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/isotope.v1.json"-->
+<!--vegaEmbed('#isotope', vis8).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+<!--var vis9="https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/chicen_meat_per_capital.v1.json"-->
+<!--vegaEmbed('#chick', vis9).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+<!--var vis10="https://raw.githubusercontent.com/Mrsquuuid/visualization/master/js/china_detail.v1.json"-->
+<!--vegaEmbed('#china_detail', vis10).then(function(result) {-->
+<!--}).catch(console.error);-->
+
+<!--</script>-->
+</body>
+</html>
